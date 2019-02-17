@@ -1,87 +1,69 @@
 /* Contact */
 
-	#contact {
-		border-bottom: solid 1px _palette(border);
-		overflow-x: hidden;
+#contact {
+	border-bottom: solid 1px _palette(border);
+	padding: 1.5rem;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
 
-		> .inner {
-			@include vendor('display', 'flex');
-			padding: 0 !important;
+	.major {
+		margin: auto;
+	}
 
-			> :nth-child(2n - 1) {
-				@include padding(4em, 0, (0, 3em, 0, 0));
-				border-right: solid 1px _palette(border);
-				width: 60%;
-			}
+	.contact-methods {
+		padding: 2rem;
+		display: flex;
+		flex: 1;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
 
-			> :nth-child(2n) {
-				padding-left: 3em;
-				width: 40%;
-			}
-
-			> .split {
-				padding: 0;
-
-				> * {
-					@include padding(3em, 0, (0, 0, 0, 3em));
-					position: relative;
-
-					&:before {
-						border-top: solid 1px _palette(border);
-						content: '';
-						display: block;
-						margin-left: -3em;
-						position: absolute;
-						top: 0;
-						width: calc(100vw + 3em);
-					}
-				}
-
-				> :first-child {
-					&:before {
-						display: none;
-					}
-				}
-			}
+	.contact-method {
+		display: flex;
+		margin: 2rem;
+		flex-direction: column;
+		justify-content: center;
+	
+		a {
+			border-bottom: none;
 		}
 
-		@include breakpoint(medium) {
-			> .inner {
-				display: block;
-
-				> :nth-child(2n - 1) {
-					@include padding(4em, 0, (0, 0, 0, 0));
-					border-right: 0;
-					width: 100%;
-				}
-
-				> :nth-child(2n) {
-					padding-left: 0;
-					width: 100%;
-				}
-
-				> .split {
-					> * {
-						@include padding(3em, 0, (0, 0, 0, 0));
-
-						&:before {
-						}
-					}
-
-					> :first-child {
-						&:before {
-							display: block;
-						}
-					}
-				}
-			}
+		span {
+			margin: auto;
 		}
 
-		@include breakpoint(small) {
-			> .inner {
-				> :nth-child(2n - 1) {
-					@include padding(3em, 0, (0, 0, 0, 0));
+		.method-type {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
+			i {
+				display: flex;
+				flex-shrink: 1;
+				padding: 0.75rem 1rem 0 0;
+			}
+
+			h3 {
+				display: flex;
+				margin: 0;
+				width: auto;
+			}
+		}
+	}
+
+	@include breakpoint(large) {
+		.contact-method {
+			.method-type {
+				i {
+					padding: 0.5rem 1rem 0 0;
 				}
 			}
 		}
 	}
+
+	@include breakpoint(small) {
+
+	}
+}
