@@ -2,7 +2,9 @@ module.exports = {
   siteMetadata: {
     title: "Chelsea's Tax Services",
     author: "Mary Lee",
-    description: "Chelsea's Tax Services is a full service accounting firm located in Crystal River, Florida committed to outsanding service and high quality work."
+    description: "Chelsea's Tax Services is a full service accounting firm located in Crystal River, Florida committed to outsanding service and high quality work.",
+    url: "https://www.chelseastaxservices.com",
+    image: '/images/facebook_preview.jpg',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

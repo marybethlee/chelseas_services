@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BannerLanding from '../components/BannerLanding'
+import SEO from '../components/SEO'
 
 import trail from '../assets/images/trail.jpg'
 import mom_paddleboarding from '../assets/images/mom_paddleboarding.jpg'
@@ -10,15 +10,7 @@ import hunter_springs from '../assets/images/hunter_springs.jpg'
 
 const Landing = (props) => (
   <Layout>
-    <Helmet
-      title="Chelsea's Tax Services"
-      meta={[
-        { name: 'description', content: "Chelsea's Tax Services is a full service accounting firm located in Crystal River, Florida committed to outsanding service and high quality work." },
-        { name: 'keywords', content: 'Crystal River, accounting, bookkeeping, tax services' },
-      ]}
-    >
-    </Helmet>
-
+    <SEO />
     <BannerLanding />
 
     <div id="main">
