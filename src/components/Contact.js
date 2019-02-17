@@ -12,7 +12,7 @@ const Contact = (props) => (
           <i className="fa fa-envelope" />
           <h3>Email</h3>
         </div>
-        <a href="#">info@chelseastaxes.com</a>
+        <a href="mailto:info@chelseastaxes.com">info@chelseastaxes.com</a>
       </div>
 
       <div className="contact-method">
