@@ -42,9 +42,9 @@ const Landing = (props) => (
       </section>
       <section className="spotlights">
         <section className="style3">
-          <Link to="/generic" className="image">
+          <div className="image">
             <img src={trail} alt="" />
-          </Link>
+          </div>
           <div className="content">
             <div className="inner">
               <header className="major">
@@ -56,9 +56,9 @@ const Landing = (props) => (
           </div>
         </section>
         <section className="style5">
-          <Link to="/generic" className="image">
+          <div className="image">
             <img src={mom_paddleboarding} alt="" />
-          </Link>
+          </div>
           <div className="content">
             <div className="inner">
               <header className="major">
@@ -92,9 +92,9 @@ const Landing = (props) => (
           </div>
         </section>
         <section className="style3">
-          <Link to="/generic" className="image">
+          <div className="image">
             <img src={hunter_springs} alt="" />
-          </Link>
+          </div>
           <div className="content">
             <div className="inner">
               <header className="major">
