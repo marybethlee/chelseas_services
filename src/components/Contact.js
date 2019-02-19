@@ -20,7 +20,7 @@ const Contact = (props) => (
           <i className="fa fa-phone" />
           <h3>Phone</h3>
         </div>
-        <span>352 - 794 - 1160</span>
+        <a href="tel:352-794-1160">352 - 794 - 1160</a>
       </div>
 
       <div className="contact-method">
