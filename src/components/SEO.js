@@ -17,10 +17,10 @@ const SEO = ({ title, description, url, image }) => (
       }
     }) => {
       const seo = {
-        title: title,
+        title,
         image: `${url}${image}`,
         url: `${url}${'/'}`,
-        description: description
+        description
       }
 
       return (
@@ -40,6 +40,12 @@ const SEO = ({ title, description, url, image }) => (
           <meta property="og:description" content={seo.description} />
           <meta property="og:image:width" content="2000" />
           <meta property="og:image:height" content="1125" />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:description" content={seo.description} />
+          <meta name="twitter:image" content={seo.image} />
+          <meta name="twitter:site" content={seo.url} />
+          <meta name="twitter:title" content={seo.title} />
         </Helmet>
       )
     }}
