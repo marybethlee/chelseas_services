@@ -31,6 +31,7 @@ const SEO = ({ title, description, url, image }) => (
             { name: 'keywords', content: 'Crystal River, accounting, bookkeeping, tax services' },
           ]}
         >
+          <meta name="google-site-verification" content="mmosNSeCZJsBxpFKQw5oV4NsHS30OTYKPxMYx07UIos" />
           <meta property="og:url" content={seo.url} />
           <meta property="og:type" content="website" />
           <meta property="og:locale" content="en" />
