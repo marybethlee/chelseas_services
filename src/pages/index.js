@@ -43,7 +43,7 @@ const Landing = (props) => (
       <section className="spotlights">
         <section className="style3">
           <div className="image">
-            <img src={trail} alt="" />
+            <img src={trail} alt="Rails to Trails in Inverness, FL" />
           </div>
           <div className="content">
             <div className="inner">
@@ -57,7 +57,7 @@ const Landing = (props) => (
         </section>
         <section className="style5">
           <div className="image">
-            <img src={mom_paddleboarding} alt="" />
+            <img src={mom_paddleboarding} alt="Paddleboarding on the Crystal River" />
           </div>
           <div className="content">
             <div className="inner">
@@ -93,7 +93,7 @@ const Landing = (props) => (
         </section>
         <section className="style3">
           <div className="image">
-            <img src={hunter_springs} alt="" />
+            <img src={hunter_springs} alt="Hunter Springs" />
           </div>
           <div className="content">
             <div className="inner">
