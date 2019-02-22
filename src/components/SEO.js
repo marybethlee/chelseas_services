@@ -27,11 +27,13 @@ const SEO = ({ title, description, url, image }) => (
         <Helmet
           title="Chelsea's Tax Services"
           meta={[
-            { name: 'description', content: "Chelsea's Tax Services is a full service accounting firm located in Crystal River, Florida committed to outsanding service and high quality work." },
             { name: 'keywords', content: 'Crystal River, accounting, bookkeeping, tax services' },
           ]}
         >
           <meta name="google-site-verification" content="mmosNSeCZJsBxpFKQw5oV4NsHS30OTYKPxMYx07UIos" />
+          <meta name="description" content={seo.description} />
+          <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+
           <meta property="og:url" content={seo.url} />
           <meta property="og:type" content="website" />
           <meta property="og:locale" content="en" />
