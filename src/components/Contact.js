@@ -28,7 +28,7 @@ const Contact = (props) => (
           <i className="fa fa-home" />
           <h3>Place of Business</h3>
         </div>
-        <span>Crytal River, FL</span>
+        <span>Crystal River, FL</span>
       </div>
     </div>
 
